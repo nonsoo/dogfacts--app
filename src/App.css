@@ -1,38 +1,77 @@
+/* @import url("https://fonts.google.com/specimen/Knewave"); */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Fonts */
+  --ff-prmy: "montserrat", sans-serif;
+
+  /* Font Size */
+  --fs-prmy: 1.35rem;
+  --fs-sec: 2.25rem;
+  --fs-tri: 3.25rem;
+
+  /* font weights */
+  --fw-prmy: 400;
+  --fw-sec: 500;
+  --fw-tri: 700;
+
+  /* Colours */
+  --col-Prmy-mod: hsl(176, 50%, 47%);
+  --col-Prmy-dark: hsl(176, 72%, 28%);
+  --col-Neu-black: hsl(0, 0%, 0%);
+  --col-Neu-dark: hsl(0, 0%, 48%);
+
+  --background-col: #f9f9f9;
+
+  --background-col-sec: #ffffff;
+
+  /* Font Colours */
+  --fcol-prmy: #ffffff;
+  --fcol-sec: #000000;
+  --fcol-tri: #8b8b8b;
+
+  /* other */
+
+  --boxShadow-prmy: 0 3px 6px 1px rgba(23, 23, 23, 0.06);
+  --letterSpacingBody: 0.06rem;
+  --lineHeight: 1.75rem;
+}
+
 .App {
-  text-align: center;
+  width: 100%;
+
+  font-size: var(--fs-prmy);
+  font-family: var(--ff-prmy);
+  font-weight: var(--fw-prmy);
+  line-height: var(--lineHeight);
+
+  color: var(--fcol-tri);
+  background-color: var(--background-col);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  padding: 4rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  gap: 3rem;
 }
 
-.App-link {
-  color: #61dafb;
+.title {
+  font-size: var(--fs-sec);
+  text-transform: capitalize;
+  font-weight: var(--fw-tri);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fact {
+  font-size: var(--fs-prmy);
+  text-align: center;
+  width: 70%;
 }
