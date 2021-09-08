@@ -4,8 +4,8 @@ import { useState } from "react";
 import data from "./data.json";
 
 function App() {
-  const [num, setNum] = useState(0);
   const factsObject = data.data;
+  const [num, setNum] = useState(0);
 
   const getFact = () => {
     setNum(Math.floor(Math.random() * factsObject.length));
